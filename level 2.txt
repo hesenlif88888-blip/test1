@@ -1,0 +1,186 @@
+level 2
+
+1)  
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "iki eded daxil edin: ";
+    cin >> a >> b;
+    if (a>b)
+     cout << a << endl;
+    else
+     cout << b << endl;
+
+    return 0;
+}
+
+
+
+
+2)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    cout<< "bir eded daxil edin: ";
+    cin>> a; 
+    
+    if (a>0)
+     cout<< "eded musbetdir" <<endl;
+    else if (a<0)
+     cout<< "eded menfidir" <<endl;
+    else 
+     cout<< "eded 0-dir" <<endl;
+    
+    return 0;
+}
+
+
+3)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "3 tam eded daxil edin: ";
+    cin >> a >> b >> c;
+
+    if (a >= b && a >= c)
+        cout << "En boyuk eded: " << a;
+    else if (b >= a && b >= c)
+        cout << "En boyuk eded: " << b;
+    else
+        cout << "En boyuk eded: " << c;
+
+    return 0;
+}
+
+
+
+4)
+
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    int a;
+    cout << "musbet eded daxil edin: ";
+    cin >> a;
+    if (a%2==0)
+     cout <<"eded cutdur" << endl;
+    else 
+     cout << "eded tekdir" <<endl;
+
+    return 0;
+}
+
+
+5)
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    int x;
+    cout <<"bali daxil edin: ";
+    cin >> x;
+    if (91<=x && x<=100)
+     cout << "A" << endl;
+     else if (81<=x && x<=90)
+     cout << "B" << endl;
+       else if (71<=x && x<=80)
+     cout << "C" << endl;
+        else if(61<=x && x<=70)
+     cout << "D" << endl;
+         else if (51<=x && x<=60)
+     cout << "E" << endl;
+          else if (x<50)
+     cout << "F" << endl;
+     
+    return 0;
+}
+
+
+
+6)
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int ay;
+    cout << "Ayin nomresini daxil edin: ";
+    cin >> ay;
+
+    if (ay == 12 || ay == 1 || ay == 2)
+        cout << "Qis fesli" << endl;
+    else if (ay == 3 || ay == 4 || ay == 5)
+        cout << "Yaz fesli" << endl;
+    else if (ay == 6 || ay == 7 || ay == 8)
+        cout << "Yay fesli" << endl;
+    else if (ay == 9 || ay == 10 || ay == 11)
+        cout << "Payiz fesli" << endl;
+    else
+        cout << "Bele ay yoxdur!" << endl;
+
+    return 0;
+}
+
+
+
+7)
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+
+    cout << "Birinci ededi daxil edin: ";
+    cin >> a;
+
+    cout << "Ikinci ededi daxil edin: ";
+    cin >> b;
+
+    cout << "Emel secin (1-toplama, 2-cixma, 3-vurma, 4-bolme): ";
+    cin >> c;
+
+    switch (c) {
+        case 1:
+            cout << "Netice: " << a + b << endl;
+            break;
+        case 2:
+            cout << "Netice: " << a - b << endl;
+            break;
+        case 3:
+            cout << "Netice: " << a * b << endl;
+            break;
+        case 4:
+            if (b != 0)
+                cout << "Netice: " << a / b << endl;
+            else
+                cout << "Sifira bolmek olmaz!" << endl;
+            break;
+        default:
+            cout << "Yanlis secim etdiniz!" << endl;
+    }
+
+    return 0;
+}
+
+
+
